@@ -1,0 +1,33 @@
+<div>
+  <script
+    type="text/javascript"
+    src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+  ></script>
+  <link href="./kontakt.css" rel="stylesheet" />
+  <div class="kontakt-container">
+    <form class="kontakt-form">
+      <form class="kontakt-form1">
+        <div>
+          <dangerous-html
+            html="
+<form
+  action='https://formspree.io/f/myyqgbyr'
+  method='POST'
+>
+  <label>
+    Your email:
+    <input type='email' name='email'>
+  </label>
+  <label>
+    Your message:
+    <textarea name='message'></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type='submit'>Send</button>
+</form>"
+          ></dangerous-html>
+        </div>
+      </form>
+    </form>
+  </div>
+</div>
